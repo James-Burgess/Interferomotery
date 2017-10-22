@@ -12,7 +12,7 @@
 - The resolution(R) of an Interferometer is given by R=L/B (Resolution = lambda / longest baseline)
 - Sensitivity Lowered by the beam dilution factor ~(L/D)^2 
 
-###
+### Todo 
 - [ ] create array models according to constarints
 - [ ] judgde arrays according to their plane coverage [Aperature Synthesis Genorator Code](https://launchpad.net/apsynsim)
 - [ ] Tabulate results and review to find patterns
