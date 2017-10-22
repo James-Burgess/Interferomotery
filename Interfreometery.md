@@ -13,12 +13,12 @@
 - Sensitivity Lowered by the beam dilution factor ~(L/D)^2 
 
 ###
-[] create array models according to constarints
-[] judgde arrays according to their plane coverage [Aperature Synthesis Genorator Code](https://launchpad.net/apsynsim)
-[] Tabulate results and review to find patterns
-[] Reiterate With new knowledge of high fidelity patterens
-[] ???
-[] Profit
+- [ ] create array models according to constarints
+- [ ] judgde arrays according to their plane coverage [Aperature Synthesis Genorator Code](https://launchpad.net/apsynsim)
+- [ ] Tabulate results and review to find patterns
+- [ ] Reiterate With new knowledge of high fidelity patterens
+- [ ] ???
+- [ ] Profit
 
 ### Resources
 -[Development of Radio Interferometry](http://www.lchr.org/a/36/il/page3.html)
