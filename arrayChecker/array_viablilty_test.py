@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import numpy as np
 
 def cost(x,y):
@@ -42,12 +43,6 @@ def sens(n, bt):
     sens = top/bottom
     return sens
 
-# print ('Cost =', np.round(cost(x,y)/1e6,2), 'MCR')
-# print ('N =', n, 'dishes')
-# print ('Tsys =', tsys(n), 'K')
-# print ('Running time/day =', np.round(tmax(n),2), 's', '/', tmax(n)/3600, 'h', '\n')
-# print ('Sensitivity =', np.round(sens(n, 2)*1e6,2), u'\u00B5' + 'Jy')
-
 def viable(x,y):
     n = len(x)
     Cost =np.round(cost(x,y)/1e6,2)
@@ -55,25 +50,6 @@ def viable(x,y):
     Running_time=np.round(tmax(n),2)
     Sensitivity =np.round(sens(n, 2)*1e6,2)
 
-    if (Sensitivity >= 10 and Running_time <= 200):
-        return
-    else: return(False)
+    if (Sensitivity >= 10 and Cost <= 200):
+        return True
 
-x = np.linspace(-6000, 6000, 60)
-y = np.random.randn(60)*100
-
-def inc(value, step): return value + step
-def step_range(start, end, step, func):
-    while start <= end:
-        yield start
-        start = func(start, step)
-
-co_ords = [(x,y) for x in step_range(12, 20000, 12, inc) for y in step_range(12, 20000, 12, inc)]
-print(len(co_ords))
-
-# for i in len(co_ords):
-#     new_c = co_ords[i]
-
-# for single in co_ords:
-#     if not(viable(*single)):
-#         co_ords.pop(single)
