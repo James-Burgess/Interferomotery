@@ -13,10 +13,10 @@ def step_range(start, end, step, func):
         start = func(start, step)
 
 #create array of cordinates
-co_ords = [(x,y) for x in step_range(12, 20000, 12, inc) for y in step_range(12, 20000, 12, inc)]
+co_ords = [(x,y) for x in step_range(0, 20000, 12, inc) for y in step_range(0, 20000, 12, inc)]
 
 #smaller array to save processing time
-# co_ords = [[x,y] for x in step_range(12, 200, 12, inc) for y in step_range(12, 200, 12, inc)]
+#co_ords = [x for x in step_range(0, 200, 10, inc)]
 
 
 print(len(co_ords))
@@ -30,8 +30,9 @@ print(len(co_ords))
 #so lets start with two nodes and map all the positions
 
 #let n1 be fixed at point 0,0 for now
+n1 = co_ords[0]
+# x_possiblities = [[a] + [b] + [c] for c in co_ords for b in co_ords for a in co_ords]
 
-# possiblities = []
-
+# y_possibilities =
 # for x,i in co_ords:
 # 	possibitiles.append([])
